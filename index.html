@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.bitpanda.com/media/redesign/favicon/favicon-16x16.png" type="image/x-icon">
     <title>BitInvest - Bitcoin Investment Platform</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -10,20 +11,25 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="bg-white text-gray-900 min-h-screen flex flex-col">
     <!-- Header/Navigation -->
     <header
       id="navbar"
-      class="bg-transparent shadow-lg fixed w-full z-10 transition duration-500 ease-in-out"
+      class="bg-transparent shadow-lg sticky top-0 w-full z-20 transition duration-500 ease-in-out"
     >
       <nav
         class="container mx-auto px-4 py-4 flex items-center justify-between"
       >
         <div class="flex items-center">
-          <a href="index.html" class="text-2xl font-bold text-teal-600"
-            >BitInvest</a
-          >
+          <a href="index.html" class="text-2xl font-bold text-teal-600">
+            <img src="./555bitpanda-logo-freelogovectors.net_.png" alt="BitInvest Logo" class="h-11">
+          </a>
         </div>
         <div class="hidden md:flex space-x-8">
           <a
@@ -114,9 +120,9 @@
         />
         Your browser does not support the video tag.
       </video>
-      <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
       <div
-        class="container mx-auto px-4 relative z-20 h-full flex items-center"
+        class="container mx-auto px-4 relative z-50 h-full flex items-center"
       >
         <div class="flex flex-col md:flex-row items-center w-full">
           <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
@@ -152,7 +158,7 @@
               </a>
               <a
                 href="calculator.html"
-                class="bg-transparent border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white font-bold py-3 px-6 rounded-lg transition flex items-center"
+                class="bg-transparent border-2 border-teal-900 text-teal-900 hover:bg-teal-500 hover:text-white font-bold py-3 px-6 rounded-lg transition flex items-center"
               >
                 <svg
                   class="w-5 h-5 mr-2"
@@ -301,6 +307,37 @@
       </div>
     </section>
 
+    <!-- New Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">
+          Products and features to get the most out of BitInvest
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-100 text-gray-600 rounded-lg p-6 shadow-lg">
+            <h3 class="text-xl font-bold mb-4">Meet the new stars on the crypto horizon</h3>
+            <p class="text-gray-600 mb-4">
+              With BitInvest Spotlight you can invest in fast-moving, hard-to-find crypto coins and projects.
+            </p>
+            <img src="https://sbcdn.bitpanda.com/440x500/b054e69262/crypto-index.png" alt="Crypto Horizon" class="rounded-lg mb-4">
+            <a href="https://www.bitpanda.com/academy/de/lektionen/was-sind-vermogenswerte-assets-und-verbindlichkeiten" class="bg-yellow-200 hover:bg-blue-300  text-gray-500 font-bold py-2 px-4 rounded-lg">
+              Learn more
+            </a>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+            <h3 class="text-xl font-bold mb-4">Put your investment to work</h3>
+            <p class="text-gray-600 mb-4">
+              Stake your coins on BitInvest and earn extra rewards on top of your holdings. It's safe, simple, and hassle-free.
+            </p>
+            <img src="https://sbcdn.bitpanda.com/440x500/88f2dee580/savings-plan.png" alt="Investment Rewards" class="rounded-lg mb-4">
+            <a href="https://www.bitpanda.com/academy/de/lektionen/was-sind-vermogenswerte-assets-und-verbindlichkeiten" class="bg-green-200 hover:bg-blue-300 text-gray-500 font-bold py-2 px-4 rounded-lg">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Learn Section -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
@@ -308,37 +345,37 @@
           Boost your financial literacy skills
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-gray-100 rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-gray-100 rounded-lg p-5 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">BitInvest Blog</h3>
             <p class="text-gray-600 mb-4">
               Get the latest company news and industry updates.
             </p>
-            <a href="#" class="text-teal-600 hover:text-teal-500 font-medium"
+            <a href="https://www.bitpanda.com/academy/en/lessons/what-is-bitcoin" class="text-teal-600 hover:text-teal-500 font-medium"
               >Visit Blog</a
             >
             <div class="mt-6">
               <img
-                src="https://via.placeholder.com/150"
+                src="https://sbcdn.bitpanda.com/960x460/3a6a6629e8/blog.png"
                 alt="Blog Icon"
-                class="mx-auto"
+                class="mx-auto rounded-lg"
               />
             </div>
           </div>
-          <div class="bg-gray-100 rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-gray-100 rounded-lg p-5 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">
               BitInvest Academy
             </h3>
             <p class="text-gray-600 mb-4">
               Learn all about investing, Bitcoin, and blockchain.
             </p>
-            <a href="#" class="text-teal-600 hover:text-teal-500 font-medium"
+            <a href="https://www.bitpanda.com/academy/en/lessons/what-is-bitcoin" class="text-teal-600 hover:text-teal-500 font-medium"
               >Visit Academy</a
             >
             <div class="mt-6">
               <img
-                src="https://via.placeholder.com/150"
+                src="https://sbcdn.bitpanda.com/960x460/495b3e2976/academy.png"
                 alt="Academy Icon"
-                class="mx-auto"
+                class="mx-auto rounded-lg"
               />
             </div>
           </div>
@@ -353,7 +390,7 @@
           All your investments. All on BitInvest.
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">
               Cryptocurrencies
             </h3>
@@ -362,59 +399,59 @@
               anywhere.
             </p>
             <img
-              src="https://via.placeholder.com/150"
+              src="https://sbcdn.bitpanda.com/960x600/05de4dc3a0/invest-crypto.png"
               alt="Cryptocurrencies"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 rounded-lg"
             />
           </div>
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">Stocks</h3>
             <p class="text-gray-600 mb-4">
               Invest in fractions of your favorite companies without buying a
               full share.
             </p>
             <img
-              src="https://via.placeholder.com/150"
+              src="https://cdn.bitpanda.com/media/invest-stocks_2-resized.png"
               alt="Stocks"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 rounded-lg"
             />
           </div>
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">ETFs</h3>
             <p class="text-gray-600 mb-4">
               Invest in fractions of your favorite ETFs without buying a full
               share.
             </p>
             <img
-              src="https://via.placeholder.com/150"
+              src="https://sbcdn.bitpanda.com/960x600/d50bd04d84/etfs.png"
               alt="ETFs"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 rounded-lg"
             />
           </div>
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">Commodities</h3>
             <p class="text-gray-600 mb-4">
               Fortify your portfolio with commodities and shield it against
               inflation.
             </p>
             <img
-              src="https://via.placeholder.com/150"
+              src="https://sbcdn.bitpanda.com/960x600/0cd0a7a756/commodities.png"
               alt="Commodities"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 rounded-lg"
             />
           </div>
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">Crypto Indices</h3>
             <p class="text-gray-600 mb-4">
               Auto-invest in the whole crypto market with a single click.
             </p>
             <img
-              src="https://via.placeholder.com/150"
+              src="https://sbcdn.bitpanda.com/960x600/b580d0522a/invest-bci.png"
               alt="Crypto Indices"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 rounded-lg"
             />
           </div>
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
             <h3 class="text-xl font-bold mb-4 text-gray-900">
               Precious Metals
             </h3>
@@ -423,9 +460,9 @@
               precious metals.
             </p>
             <img
-              src="https://via.placeholder.com/150"
+              src="https://sbcdn.bitpanda.com/960x600/3362468133/invest-metals.png"
               alt="Precious Metals"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 rounded-lg"
             />
           </div>
         </div>
@@ -435,7 +472,7 @@
     <!-- Testimonies Section -->
     <section class="py-16 bg-gray-100">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-12 text-center text-gray-900">
+        <h1 class="text-3xl font-bold mb-12 text-center text-gray-900">
           What Our Customers Say
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -446,12 +483,12 @@
             </p>
             <div class="flex items-center">
               <img
-                src="https://via.placeholder.com/50"
+                src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Customer 1"
                 class="w-12 h-12 rounded-full mr-4"
               />
               <div>
-                <h4 class="font-bold text-gray-900">John Doe</h4>
+                <h4 class="font-bold text-gray-900">Jane Marquee</h4>
                 <p class="text-sm text-gray-600">Investor</p>
               </div>
             </div>
@@ -463,12 +500,12 @@
             </p>
             <div class="flex items-center">
               <img
-                src="https://via.placeholder.com/50"
+                src="https://images.unsplash.com/photo-1699205016685-0d8da40d3025?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Customer 2"
                 class="w-12 h-12 rounded-full mr-4"
               />
               <div>
-                <h4 class="font-bold text-gray-900">Jane Smith</h4>
+                <h4 class="font-bold text-gray-900">Sarah Smith</h4>
                 <p class="text-sm text-gray-600">Crypto Enthusiast</p>
               </div>
             </div>
@@ -480,12 +517,12 @@
             </p>
             <div class="flex items-center">
               <img
-                src="https://via.placeholder.com/50"
+                src="https://images.unsplash.com/photo-1695891768225-3605c2347636?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Customer 3"
                 class="w-12 h-12 rounded-full mr-4"
               />
               <div>
-                <h4 class="font-bold text-gray-900">Michael Brown</h4>
+                <h4 class="font-bold text-gray-900">Michael Min</h4>
                 <p class="text-sm text-gray-600">Entrepreneur</p>
               </div>
             </div>
@@ -497,12 +534,12 @@
             </p>
             <div class="flex items-center">
               <img
-                src="https://via.placeholder.com/50"
+                src="https://images.unsplash.com/photo-1610387735653-3af3f9653838?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Customer 4"
                 class="w-12 h-12 rounded-full mr-4"
               />
               <div>
-                <h4 class="font-bold text-gray-900">Emily Davis</h4>
+                <h4 class="font-bold text-gray-900">Andreea Avramescu</h4>
                 <p class="text-sm text-gray-600">Financial Analyst</p>
               </div>
             </div>
@@ -515,17 +552,30 @@
     <section class="py-16 bg-gradient-to-r from-teal-500 to-blue-600">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-6 text-black">
-          Ready to start investing?
+          Questions? We’re here for you
         </h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto text-black">
-          Join thousands of investors who trust BitInvest for their
-          cryptocurrency investments.
-        </p>
-        <a
-          href="calculator.html"
-          class="bg-white text-blue-600 hover:bg-gray-400 font-bold py-3 px-8 rounded-lg transition inline-block"
-          >Start Now</a
-        >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+            <div class="mb-4">
+              <img src="https://sbcdn.bitpanda.com/65x65/5ac5b9329c/community.svg" alt="Community Icon" class="mx-auto h-12">
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Community</h3>
+            <p class="text-gray-600 mb-4">
+              Join our online community so you can be the first to hear about company news, new products, and more.
+            </p>
+            <a href="https://support.bitpanda.com/hc/en-us/articles/4408844610578-Bitpanda-Community-Team" class="text-teal-600 hover:text-teal-500 font-medium">Join us</a>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+            <div class="mb-4">
+              <img src="https://sbcdn.bitpanda.com/65x65/74c45b0f2f/contact-us.svg" alt="Helpdesk Icon" class="mx-auto h-12">
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Contact us</h3>
+            <p class="text-gray-600 mb-4">
+              Our BitInvest Helpdesk is filled with in-depth articles, and if you need more help, we are always available to lend a helping hand through our contact form.
+            </p>
+            <a href="https://support.bitpanda.com/hc/en-us/articles/360000048900-Login-issues" class="text-teal-600 hover:text-teal-500 font-medium">Go to Helpdesk</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -534,7 +584,9 @@
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-xl font-bold mb-4 text-gray-900">BitInvest</h3>
+            <h3 class="text-xl font-bold mb-4 text-gray-900">
+              <img src="./555bitpanda-logo-freelogovectors.net_.png" alt="BitInvest Logo" class="h-14">
+            </h3>
             <p class="text-gray-600">
               Your trusted platform for Bitcoin and cryptocurrency investments.
             </p>
@@ -576,17 +628,23 @@
             <h4 class="font-bold mb-4">Legal</h4>
             <ul class="space-y-2">
               <li>
-                <a href="https://cdn.bitpanda.com/terms-and-conditions/bitpanda-group-privacy-notice-bitpanda-en-2.0.1.pdf" class="text-gray-600 hover:text-teal-400 transition"
+                <a
+                  href="https://cdn.bitpanda.com/terms-and-conditions/bitpanda-group-privacy-notice-bitpanda-en-2.0.1.pdf"
+                  class="text-gray-600 hover:text-teal-400 transition"
                   >Privacy Policy</a
                 >
               </li>
               <li>
-                <a href="https://cdn.bitpanda.com/terms-and-conditions/user-agreement-bitpanda-bitpanda-gmbh-en-1.0.0.pdf" class="text-gray-600 hover:text-teal-400 transition"
+                <a
+                  href="https://cdn.bitpanda.com/terms-and-conditions/user-agreement-bitpanda-bitpanda-gmbh-en-1.0.0.pdf"
+                  class="text-gray-600 hover:text-teal-400 transition"
                   >Terms of Service</a
                 >
               </li>
               <li>
-                <a href="https://cdn.bitpanda.com/terms-and-conditions/cookie-policy-bitpanda-en-1.0.1.pdf" class="text-gray-600 hover:text-teal-400 transition"
+                <a
+                  href="https://cdn.bitpanda.com/terms-and-conditions/cookie-policy-bitpanda-en-1.0.1.pdf"
+                  class="text-gray-600 hover:text-teal-400 transition"
                   >Cookie Policy</a
                 >
               </li>
@@ -644,25 +702,26 @@
 
     <div
       id="cookie-banner"
-      class="fixed bottom-4 left-4 right-4 bg-gray-900 text-white py-4 px-6 rounded-lg shadow-lg flex justify-between items-center z-50"
+      class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg flex items-center justify-between space-x-4 z-50"
     >
-      <p class="text-sm">
-        We use cookies to improve your experience on our site. By using our
-        site, you accept our
-        <a href="https://cdn.bitpanda.com/terms-and-conditions/bitpanda-group-privacy-notice-bitpanda-en-2.0.1.pdf" class="underline text-teal-400 hover:text-teal-300"
+      <p class="text-sm flex-1">
+        We use cookies to enhance your experience. By continuing, you agree to our
+        <a
+          href="https://cdn.bitpanda.com/terms-and-conditions/bitpanda-group-privacy-notice-bitpanda-en-2.0.1.pdf"
+          class="underline text-teal-400 hover:text-teal-300"
           >Privacy Policy</a
         >.
       </p>
-      <div class="flex space-x-4">
+      <div class="flex space-x-2">
         <button
           id="accept-cookies"
-          class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg"
+          class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-1 px-3 rounded-lg text-sm"
         >
           Accept
         </button>
         <button
           id="dismiss-banner"
-          class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg"
+          class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-1 px-3 rounded-lg text-sm"
         >
           Dismiss
         </button>
