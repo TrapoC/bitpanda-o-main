@@ -15,6 +15,18 @@
       html {
         scroll-behavior: smooth;
       }
+      :root {
+        --bg-color: white;
+        --text-color: black;
+      }
+      .dark {
+        --bg-color: #1a202c;
+        --text-color: white;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
     </style>
   </head>
   <body class="bg-white text-gray-900 min-h-screen flex flex-col">
@@ -34,29 +46,37 @@
         <div class="hidden md:flex space-x-8">
           <a
             href="index.html"
-            class="text-gray-900 hover:text-teal-600 transition"
+            class="text-gray-900 hover:text-green-600 transition"
             >Home</a
           >
           <a
             href="prices.html"
-            class="text-gray-900 hover:text-teal-600 transition"
+            class="text-gray-900 hover:text-green-600 transition"
             >Prices</a
           >
           <a
             href="calculator.html"
-            class="text-gray-900 hover:text-teal-600 transition"
+            class="text-gray-900 hover:text-green-600 transition"
             >Calculator</a
           >
           <a
             href="learn.html"
-            class="text-gray-900 hover:text-teal-600 transition"
+            class="text-gray-900 hover:text-green-600 transition"
             >Learn</a
           >
           <a
             href="contact.html"
-            class="text-gray-900 hover:text-teal-600 transition"
+            class="text-gray-900 hover:text-green-600 transition"
             >Contact</a
           >
+        </div>
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="text-gray-900 hover:text-green-600 transition">
+            <svg id="theme-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="sun-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M6.05 17.95l-1.414-1.414M18.364 18.364l-1.414-1.414M6.05 6.05L4.636 7.464M12 7a5 5 0 100 10 5 5 0 000-10z"></path>
+              <path id="moon-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path>
+            </svg>
+          </button>
         </div>
         <div class="md:hidden">
           <button id="mobile-menu-button" class="text-gray-900">
@@ -80,27 +100,27 @@
       <div id="mobile-menu" class="md:hidden hidden bg-gray-100 pb-4">
         <a
           href="index.html"
-          class="block py-2 px-4 text-gray-900 hover:bg-gray-200"
+          class="block py-2 px-4 text-gray-900 hover:bg-green-600"
           >Home</a
         >
         <a
           href="prices.html"
-          class="block py-2 px-4 text-gray-900 hover:bg-gray-200"
+          class="block py-2 px-4 text-gray-900 hover:bg-green-600"
           >Prices</a
         >
         <a
           href="calculator.html"
-          class="block py-2 px-4 text-gray-900 hover:bg-gray-200"
+          class="block py-2 px-4 text-gray-900 hover:bg-green-600"
           >Calculator</a
         >
         <a
           href="learn.html"
-          class="block py-2 px-4 text-gray-900 hover:bg-gray-200"
+          class="block py-2 px-4 text-gray-900 hover:bg-green-600"
           >Learn</a
         >
         <a
           href="contact.html"
-          class="block py-2 px-4 text-gray-900 hover:bg-gray-200"
+          class="block py-2 px-4 text-gray-900 hover:bg-green-600"
           >Contact</a
         >
       </div>
@@ -115,7 +135,7 @@
         class="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source
-          src="./Cryptocurrency Stock Footage - Cryptocurrency Free Stock Videos - Cryptocurrency No Copyright Videos (1).mp4"
+            src="./4389377-uhd_3840_2024_30fps.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -138,7 +158,7 @@
             >
               <a
                 href="prices.html"
-                class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition flex items-center"
+                class="bg-teal-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-lg transition flex items-center"
               >
                 <svg
                   class="w-5 h-5 mr-2"
@@ -158,7 +178,7 @@
               </a>
               <a
                 href="calculator.html"
-                class="bg-transparent border-2 border-teal-900 text-teal-900 hover:bg-teal-500 hover:text-white font-bold py-3 px-6 rounded-lg transition flex items-center"
+                class="bg-transparent border-2 border-teal-900 text-white hover:bg-teal-500 hover:text-green-500 font-bold py-3 px-6 rounded-lg transition flex items-center"
               >
                 <svg
                   class="w-5 h-5 mr-2"
@@ -320,7 +340,7 @@
               With BitInvest Spotlight you can invest in fast-moving, hard-to-find crypto coins and projects.
             </p>
             <img src="https://sbcdn.bitpanda.com/440x500/b054e69262/crypto-index.png" alt="Crypto Horizon" class="rounded-lg mb-4">
-            <a href="https://www.bitpanda.com/academy/de/lektionen/was-sind-vermogenswerte-assets-und-verbindlichkeiten" class="bg-yellow-200 hover:bg-blue-300  text-gray-500 font-bold py-2 px-4 rounded-lg">
+            <a href="https://www.bitpanda.com/academy/de/lektionen/was-sind-vermogenswerte-assets-und-verbindlichkeiten" class="bg-yellow-500 hover:bg-blue-300  text-white font-bold py-2 px-4 rounded-lg">
               Learn more
             </a>
           </div>
@@ -330,7 +350,7 @@
               Stake your coins on BitInvest and earn extra rewards on top of your holdings. It's safe, simple, and hassle-free.
             </p>
             <img src="https://sbcdn.bitpanda.com/440x500/88f2dee580/savings-plan.png" alt="Investment Rewards" class="rounded-lg mb-4">
-            <a href="https://www.bitpanda.com/academy/de/lektionen/was-sind-vermogenswerte-assets-und-verbindlichkeiten" class="bg-green-200 hover:bg-blue-300 text-gray-500 font-bold py-2 px-4 rounded-lg">
+            <a href="https://www.bitpanda.com/academy/de/lektionen/was-sind-vermogenswerte-assets-und-verbindlichkeiten" class="bg-green-500 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-lg">
               Read more
             </a>
           </div>
@@ -700,9 +720,10 @@
       </div>
     </footer>
 
+    
     <div
       id="cookie-banner"
-      class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg flex items-center justify-between space-x-4 z-50"
+      class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 bg-gray-300 text-gray-800 py-2 px-4 rounded-lg shadow-lg flex items-center justify-between space-x-4 z-50"
     >
       <p class="text-sm flex-1">
         We use cookies to enhance your experience. By continuing, you agree to our
@@ -715,16 +736,17 @@
       <div class="flex space-x-2">
         <button
           id="accept-cookies"
-          class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-1 px-3 rounded-lg text-sm"
+          class="bg-gray-900 hover:bg-green-600 text-white font-bold py-1 px-3 rounded-lg text-sm"
         >
           Accept
         </button>
         <button
           id="dismiss-banner"
-          class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-1 px-3 rounded-lg text-sm"
+          class="bg-gray-900 hover:bg-red-600 text-white font-bold py-1 px-3 rounded-lg text-sm"
         >
           Dismiss
         </button>
+        
       </div>
     </div>
 
@@ -752,6 +774,33 @@
 
       dismissBannerButton.addEventListener("click", () => {
         cookieBanner.style.display = "none";
+      });
+
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      const sunIcon = document.getElementById("sun-icon");
+      const moonIcon = document.getElementById("moon-icon");
+
+      // Check for saved theme in localStorage
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        sunIcon.classList.remove("hidden");
+        moonIcon.classList.add("hidden");
+      }
+
+      themeToggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        const isDarkMode = document.documentElement.classList.contains("dark");
+        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+
+        if (isDarkMode) {
+          sunIcon.classList.remove("hidden");
+          moonIcon.classList.add("hidden");
+        } else {
+          sunIcon.classList.add("hidden");
+          moonIcon.classList.remove("hidden");
+        }
       });
     </script>
   </body>
